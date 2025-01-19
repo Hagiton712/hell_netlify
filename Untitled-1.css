@@ -1,0 +1,116 @@
+/* Basic CSS Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   background-color: #fce4e4;
+   color: #5f3333;
+   padding: 20px 20px 0px 20px;
+   min-height: 100vh; /* 最低でも画面の高さを確保 */
+   display: flex;
+   flex-direction: column; /* mainとfooterを縦に並べる */
+}
+
+
+
+/* Header Styling */
+.header {
+   background: url(file:///C:/Users/hagit/VScode/IMG_3104.jpeg);
+   color: #fce4e4;
+   background-size: cover;
+   padding: 50px 10px;
+}
+
+.header-logo {
+   font-size: 20px;
+   float: left;
+   font-weight:900;
+}
+
+.header-list {
+   font-size: 10px;
+   float: right;
+}
+
+.header-list li {
+   list-style-type: none;
+   display: flex;
+   gap: 20px;
+   font-weight:900;
+}
+
+/* Main Styling */
+.main {
+   flex-grow: 1; /* 残りのスペースをmainが占める */
+   margin: 20px 0;
+}
+
+.main h3 {
+   font-weight:900;
+}
+.main h5 {
+   font-weight:900;
+}
+
+
+.plofile {
+   float: left;
+   margin: 10px 0;
+}
+
+.contents-itemA {
+   float: left;
+   margin: 10px 5px;
+}
+
+.hobby {
+   float: left;
+   margin: 10px 0;
+}
+
+.contents-items {
+   display: flex;
+   gap: 20px;
+   padding: 10px 0;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.contents-item {
+   width: 33.333%;
+}
+
+.contents-item img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius:20px
+}
+
+/* Footer Styli   ng */
+.footer-contents {
+   background: #949090;
+   color: #5f3333;
+   font-weight:900;
+   padding: 20px 20px 0px 20px;
+   margin-top: auto; /* コンテンツの後ろにフッターを配置 */
+}
+
+.footer-logo {
+   float: left;
+}
+
+.footer-list {
+   float: right;
+}
+
+.footer-list li {
+   list-style-type: none;
+   float: left;
+   padding: 20px;
+}
